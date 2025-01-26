@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Website by ankit</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <!-- This is External java script -->
+    <script src="index.js"></script>
+
+    <div id="container">
+        <div id="header" >
+            <h1> Please Enter Your Infomation </h1>
+        </div>
+        <form method="POST" onsubmit="return Velidation()" id="form" name="contactForm" >
+        <div class="row" id="box1">
+                <label class="font">Name</label>
+                <input type="text" class="input" id="username" autocomplete="off"> </input>
+            </div>
+                <span class="error " id="usererror">
+            </span>
+            
+            <div class="row" id="box2">
+                <label class="font">age</label>
+                <input type="number" class="input" id="age" autocomplete="off"></input>
+            </div>
+            <span class="error " id="ageerror"></span>
+
+            <div class="row" id="box3">
+                <label class="font">Country</label>
+                <select name="Country" id="option" class="input" >
+                    <option >Select</option>
+                    <option >India</option>   
+                    <option >United State</option>   
+                    <option >United Kingdom</option>  
+                    <option >Nepal</option> 
+                    <option >China</option>    
+                    <option >Japan</option>
+                    <option >Canada</option>
+                </select>
+            </div>
+            <span class="error " id="countryerror"></span>
+
+            <div class="row2" id="box4">
+                <Label class="font"  >Gender</Label>
+                <br>
+                <div class="form-inline">
+                    <label class="font" >
+                        <input type="radio" name="gender" value="male"></input>Male
+                    </label>
+                    <Label class="font">
+                        <input type="radio" name="gender" value="female"></input>Female
+                    </Label>
+                </div>
+            </div>
+            <span class="error " id="gendererror"></span>
+
+            <div class="row2" id="box5">
+                <Label>
+                    <Label class="font" >Hobbies <i>(Optional)</i></Label>
+                    <br>
+                    <div class="form-inline">
+                        <label>
+                            <input type="checkbox" name="hobbies[]" value="sports" class="font"  ></input>sports
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobbies[]" value="Movie" class="font"  ></input>Movie
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobbies[]" value="Gaming" class="font" ></input>Gaming
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobbies[]" value="Coding" class="font" ></input>Coding
+                        </label>
+                    </div>
+                </Label>
+            </div>
+            
+            <div>
+                <input type="submit" value="submit" class="font" id="button">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
